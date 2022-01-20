@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="pictures/profile.jpeg" type="image/x-icon">
+    
+    <title>Mahammad Rafeek</title>
+    <style>
+      body{
+        background: ;
+      }
+      
+      .navbar{
+       
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+      }
+      .nav-link{
+        color: rgb(0, 0, 0);
+      }
+      .myimage{
+        width: 100%;
+        height: 100%;
+        
+        
+
+
+      }
+      .image-style{
+        height:250px;
+      }
+      #skills,#blog,#contact{
+        padding-top: 60px;
+        margin-bottom: 50px;
+      }
+      .card{
+        margin-right: auto;
+        margin-left: auto;
+       
+        margin-bottom: 50px;
+      }
+      section{
+        background: transparent;
+      }
+      nav{
+        background: transparent;
+      }
+      .contactbtn{
+        background: rgb(156, 26, 135);
+      }
+      .quotesize{
+        font-size: 51%;
+        font-weight: bold;
+      }
+      .qnamesize{
+        font-size: 10px;
+      }
+      
+     
+      
+    </style>
+</head>
+<body class="text-dark bg-#121212" id="mood" >
+  
+  <header style="position: fixed; width: 100%; z-index: 1;">
+    <nav class="navbar navbar-expand-md navbar-light text-dark" id="moods"> 
+      <div class="container-fluid">
+        
+          
+          <button
+          class="navbar-toggler"
+          type="buttun" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          
+          
+
+          
+          ><SPAn class="navbar-toggler-icon"></SPAn>  </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#" >Home</a>
+                  </li> 
+                  <li class="nav-item">
+                    
+                      <a class="nav-link" href="#skills">Skills</a>
+
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#blog">Blog</a>
+
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+
+                  </li>
+
+                  <li class="nav-item nav-link">
+
+              <div onclick="todark()" class="">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="20" fill="currentColor" class="bi bi-moon mymoon" viewBox="0 0 16 16">
+                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                </svg>
+                
+              </div>
+            </li>
+            <li class="nav-item nav-link">
+              <div onclick="tolight()" class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="20"  fill="currentColor" class="bi bi-sun mysun"  viewBox="0 0 16 16">
+                  <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                </svg>
+              </div>
+            </li>
+            </ul>
+              
+          </div>
+
+      </div>
+
+  </nav>
+
+
+
+  </header>
+  <section id="" class="bg-transparent " style="text-align: center; margin-bottom: 50px; padding-top: 70px;  padding-bottom: 50px;" >
+    <div class="row container-fluid">
+      <div class="col-xs-12 col-lg-6">
+        <img src="pictures/profile.jpeg" alt="" class="rounded-circle img-responsive myimage">
+
+      </div>
+      <div class="col-12 col-lg-6" style=" margin: auto; ">
+        <h1 href=""  > Mahammad Rafeek</h1>
+        
+        <div class="container">
+          <blockquote class="blockquote text-center text-success">
+            <p class="text-right quotesize"><span> You can do anything as long as you have the passion.<br> Follow your passion.</span></p>
+            <footer class="blockquote-footer qnamesize">Mahammad Rafeek, <cite title="The Greek Way">Machanical graduate.</cite></footer>
+          </blockquote>
+    </div>
+       
+      
+
+      </div>
+
+
+
+
+    </div>
+   
+  </section>
+  <hr style="height: 20px;">
+  <section id="mood" class="bg-transparent" style=" margin-bottom: 100px;">
+
+    <h1 class="text-center" id="skills"> Skills</h1>
+    <div class="row  container-fluid">
+      <div class="col-12 col-lg-4"> 
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top image-style" src="https://miro.medium.com/max/3840/1*u-ja3UP0cjZayzZ_ixb_Lw.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Web Designing</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+
+      </div> 
+      <div class="col-12 col-lg-4"> 
+        <div class="card" style="width: 18rem; ">
+          <img class="card-img-top image-style" src="https://th.bing.com/th/id/OIP.MWPBeSt_U9HHzsmCEdgzfgHaFS?pid=ImgDet&rs=1" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Content Creaction</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4"> 
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top image-style" src="https://th.bing.com/th/id/OIP.6xH6PQ3npgjOA4LZw884UAHaHa?pid=ImgDet&rs=1" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Teaching</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  
+
+
+
+
+
+  </section>
+  <hr style="height: 20px;">
+  <section id="mood" class="bg-transparent" style=" margin-bottom: 100px;">
+
+    <h1 class="text-center" id="blog"> Blog</h1>
+    <div class="row  container-fluid">
+      <div class="col-12 col-lg-4"> 
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top image-style" src="https://telecoms.adaptit.tech/wp-content/uploads/2020/01/internet-of-things-example.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Internet of things.</h5>
+            <p class="card-text">Coming soon...</p>
+          </div>
+        </div>
+
+      </div> 
+      <div class="col-12 col-lg-4"> 
+        <div class="card" style="width: 18rem; ">
+          <img class="card-img-top image-style" src="https://th.bing.com/th/id/OIP._uuG8Dhy5J5kjAO0QQ0c6wHaGJ?pid=ImgDet&rs=1" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">programming</h5>
+            <p class="card-text">C,C++,Java,Javascript</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4"> 
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top image-style" src="https://th.bing.com/th/id/OIP.6xH6PQ3npgjOA4LZw884UAHaHa?pid=ImgDet&rs=1" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">3D modling</h5>
+            <p class="card-text">Comming soon...</p>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  
+
+
+
+
+
+  </section>
+  <hr style="height: 20px;">
+  <section id="mood" class="bg-transparent" style=" margin-bottom: 100px;" >
+    <h1 class="text-center" id="contact"> Contact</h1>
+    <form id="contact-form" method="post" action="contact.php" role="form" >
+
+      <div class="messages"></div>
+  
+      <div class="controls m-5">
+  
+          <div class="row ">
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="form_name">Firstname *</label>
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+              
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="form_email">Email *</label>
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+             
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="form_message">Message *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+              
+              <div class="col-md-12">
+                <br>
+                  <input type="submit" class="btn btn-success btn-send contactbtn" value="Send message">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <p class="text-muted">
+                      <strong>*</strong> These fields are required. Contact form template by
+                      </p>
+              </div>
+          </div>
+      </div>
+  
+  </form>
+
+
+
+
+  </section>
+  <hr style="height: 20px;">
+  <footer class="bg-transparent" style="background-color: ">
+    
+    
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="">
+      © 2022 Copyright:
+      <p class="" href="#">Mahammad Rafeek</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+  <script>
+    
+    function todark() {
+      
+      var v=document.getElementById("mood")
+      var v1=document.getElementById("moods")
+      v.classList.remove("bg-light")
+      v.classList.remove("text-dark")
+      v1.classList.remove("navbar-light")
+      v1.classList.remove("text-dark")
+
+      v.className += " bg-dark" 
+      v.className += " text-light" 
+      v1.className += " navbar-dark" 
+      v1.className += " text-light" 
+      
+    }
+    function tolight() {
+      
+      var v=document.getElementById("mood")
+      var v1=document.getElementById("moods")
+      v.classList.remove("bg-dark")
+      v.classList.remove("text-light")
+      v1.classList.remove("navbar-dark")
+      v1.classList.remove("text-light")
+      
+
+      v.className += " bg-light" 
+      v.className += " text-dark" 
+      v1.className += "  navbar-light" 
+      v1.className += " text-dark"
+      
+    }
+    
+    
+
+
+
+
+   
+
+
+
+  </script>
+
+    
+
+
+
+
+
+
+ 
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <script>!function(){var e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,a=localStorage.getItem("color-schema")||"auto";("dark"===a||e&&"light"!==a)&&document.documentElement.classList.toggle("dark",!0)}()</script>
+  </body>
+</html>
